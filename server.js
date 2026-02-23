@@ -8,6 +8,7 @@ import blogRoutes from "./routes/blogRoutes.js";
 import portfolioRoutes from "./routes/portfolioRoutes.js";
 import careerRoutes from "./routes/careerRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
+import teamRoutes from "./routes/teamRoutes.js";
 
 dotenv.config();
 connectDB();
@@ -32,6 +33,7 @@ app.use("/api/portfolio", portfolioRoutes);
 // lkjh
 app.use("/api/career", careerRoutes);
 app.use("/api/contact", contactRoutes);
+app.use("/api/team", teamRoutes);
 
 const PORT = process.env.PORT || 5000;
 
